@@ -23,8 +23,8 @@ FontName=Hack 12
 DropdownStatusIcon=FALSE
 DropdownAlwaysShowTabs=FALSE
 ShortcutsNoMnemonics=TRUE
-ColorForeground=#aae0bd70aa7e
-ColorBackground=#323232323232
-ColorPalette=#5a5a26262626;#89898c8ca0a0;#e3d6577d3467;#dfdfafaf8f8f;#9a9ab8b8d7d7;#f502cc2e58e5;#7d63f58cea1c;#505050505050;#0000b18558c3;#d8462ffb2ffb;#343425252020;#f0f0dfdfafaf;#8787b3b36a6a;#ecec9393d3d3;#51518080b1b1;#c1c1c1c1c1c1
+ColorForeground=#ae8bbfffae8b
+ColorBackground=#262626262626
+ColorPalette=#2d6b2d6b2d6b;#efef26262828;#74dcd62a7d93;#dfdfafaf8f8f;#9a9ab8b8d7d7;#f502cc2e58e5;#a769ca29c6db;#505050505050;#a108a108a108;#d8462ffb2ffb;#bca0d54bbed6;#f0f0dfdfafaf;#8787b3b36a6a;#ecec9393d3d3;#51518080b1b1;#c1c1c1c1c1c1
 ColorCursor=#787878787878
 
