@@ -31,7 +31,7 @@
       <property name="background-image" type="string" value="/home/hamlet/Desktop/Pic/654869020265463812_1574668698_0.jpeg"/>
     </property>
     <property name="panel-3" type="empty">
-      <property name="position" type="string" value="p=8;x=53;y=1070"/>
+      <property name="position" type="string" value="p=4;x=1849;y=1068"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="2"/>
         <value type="int" value="4"/>
@@ -65,6 +65,7 @@
         <value type="string" value="drop-down terminal"/>
         <value type="string" value="scim-panel-gtk"/>
         <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="polly"/>
         <value type="string" value="nabi"/>
         <value type="string" value="xfce 터미널"/>
       </property>
