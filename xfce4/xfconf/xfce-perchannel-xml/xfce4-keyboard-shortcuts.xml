@@ -34,9 +34,9 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -c 1 sset Master 5%+"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="amixer -c 1 sset Master 5%-"/>
       <property name="Print" type="string" value="scrot -u &apos;%Y-%m-%d_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
-      <property name="&lt;Super&gt;e" type="string" value="emacs"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
+      <property name="&lt;Super&gt;e" type="string" value="emacsclient -c -n"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
