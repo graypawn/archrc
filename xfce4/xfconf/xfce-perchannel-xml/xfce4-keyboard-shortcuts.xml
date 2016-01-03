@@ -36,6 +36,7 @@
       <property name="Print" type="string" value="scrot -u &apos;%Y-%m-%d_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
       <property name="&lt;Super&gt;e" type="string" value="emacs"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="xfce4-terminal --drop-down"/>
+      <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
