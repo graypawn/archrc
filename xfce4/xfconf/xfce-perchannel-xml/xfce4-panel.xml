@@ -22,7 +22,7 @@
       <property name="background-style" type="uint" value="0"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="false"/>
+      <property name="position-locked" type="bool" value="true"/>
       <property name="background-color" type="array">
         <value type="uint" value="11592"/>
         <value type="uint" value="11592"/>

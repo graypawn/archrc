@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-keyboard-shortcuts" version="1.0">
@@ -33,10 +34,10 @@
       <property name="&lt;Super&gt;f" type="string" value="thunar"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -c 1 sset Master 5%+"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="amixer -c 1 sset Master 5%-"/>
-      <property name="Print" type="string" value="scrot -u &apos;%m-%d-%T_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Super&gt;e" type="string" value="emacsclient -c -n"/>
+      <property name="Print" type="string" value="scrot -u &apos;%m-%d-%T_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
