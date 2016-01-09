@@ -17,7 +17,7 @@
       </property>
       <property name="size" type="uint" value="23"/>
       <property name="length" type="uint" value="100"/>
-      <property name="background-alpha" type="uint" value="100"/>
+      <property name="background-alpha" type="uint" value="90"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="background-style" type="uint" value="0"/>
       <property name="enter-opacity" type="uint" value="100"/>
@@ -30,7 +30,7 @@
         <value type="uint" value="65535"/>
       </property>
       <property name="nrows" type="uint" value="1"/>
-      <property name="length-adjust" type="bool" value="true"/>
+      <property name="length-adjust" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
