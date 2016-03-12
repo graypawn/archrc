@@ -1,0 +1,38 @@
+# Fcitx
+fcitx/profile
+fcitx/cached_layout
+
+fcitx/clipboard/
+fcitx/log/
+fcitx/data/
+fcitx/dbus/
+
+fcitx/conf/fcitx-autoeng.config
+fcitx/conf/fcitx-chttrans.config
+fcitx/conf/fcitx-classic-ui.config
+fcitx/conf/fcitx-hangul.config
+fcitx/conf/fcitx-imselector.config
+fcitx/conf/fcitx-keyboard.config
+fcitx/conf/fcitx-notify.config
+fcitx/conf/fcitx-pinyin-enhance.config
+fcitx/conf/fcitx-spell.config
+fcitx/conf/fcitx-unicode.config
+fcitx/conf/fcitx-xim.config
+fcitx/conf/fcitx-xkb.config
+
+
+# XFCE4
+# xfce4/help.rc
+# xfce4/helpers.rc
+
+xfce4/appfinder/
+xfce4/desktop/
+xfce4/panel/
+
+xfce4/xfconf/xfce-perchannel-xml/displays.xml
+xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
