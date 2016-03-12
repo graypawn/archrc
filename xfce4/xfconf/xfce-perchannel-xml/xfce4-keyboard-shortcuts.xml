@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-keyboard-shortcuts" version="1.0">
@@ -31,13 +30,14 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;f" type="string" value="thunar"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="amixer -c 1 sset Master 5%+"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="amixer -c 1 sset Master 5%-"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
       <property name="&lt;Super&gt;e" type="string" value="emacsclient -c -n"/>
       <property name="Print" type="string" value="scrot -u &apos;%m-%d-%T_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
+      <property name="&lt;Super&gt;k" type="string" value="keepassx"/>
+      <property name="&lt;Super&gt;f" type="string" value="thunar"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -114,6 +114,7 @@
       <property name="&lt;Super&gt;r" type="string" value="shade_window_key"/>
       <property name="&lt;Super&gt;Down" type="string" value="tile_down_key"/>
       <property name="&lt;Super&gt;Up" type="string" value="tile_up_key"/>
+      <property name="&lt;Super&gt;h" type="string" value="hide_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
