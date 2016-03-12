@@ -40,3 +40,7 @@ xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 # leiningen
 .lein/self-installs/
 .lein/repl-history
+
+# XFCE4 Menu
+applications/mimeinfo.cache
+applications/userapp-*.desktop

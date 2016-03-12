@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Emacs Daemon
+Icon=emacs
+Exec=sh /home/guilty/.emacs.d/emacs-daemon.sh
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=false
+Comment=
+Path=
