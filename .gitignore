@@ -31,6 +31,7 @@ xfce4/panel/
 
 xfce4/xfconf/xfce-perchannel-xml/displays.xml
 xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
