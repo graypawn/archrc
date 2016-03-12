@@ -5,15 +5,14 @@
   <property name="panels" type="array">
     <value type="int" value="3"/>
     <property name="panel-3" type="empty">
-      <property name="position" type="string" value="p=6;x=960;y=19"/>
+      <property name="position" type="string" value="p=6;x=960;y=13"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="2"/>
         <value type="int" value="4"/>
         <value type="int" value="14"/>
-        <value type="int" value="11"/>
-        <value type="int" value="12"/>
-        <value type="int" value="13"/>
+        <value type="int" value="3"/>
         <value type="int" value="1"/>
+        <value type="int" value="7"/>
       </property>
       <property name="size" type="uint" value="25"/>
       <property name="length" type="uint" value="100"/>
@@ -22,7 +21,7 @@
       <property name="background-style" type="uint" value="0"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="false"/>
+      <property name="position-locked" type="bool" value="true"/>
       <property name="background-color" type="array">
         <value type="uint" value="16384"/>
         <value type="uint" value="16384"/>
@@ -32,6 +31,8 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="background-image" type="string" value="/home/guilty/Desktop/Pic/654869020265463812_1574668698_0.jpeg"/>
+      <property name="output-name" type="string" value=""/>
+      <property name="span-monitors" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -49,26 +50,12 @@
         <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="polly"/>
         <value type="string" value="nabi"/>
+        <value type="string" value="keepassx"/>
         <value type="string" value="xfce 터미널"/>
       </property>
       <property name="names-hidden" type="array">
         <value type="string" value="xfce terminal"/>
         <value type="string" value="터미널 내려 놓기"/>
-      </property>
-    </property>
-    <property name="plugin-11" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14522188561.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-12" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14522188652.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-13" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14522188723.desktop"/>
       </property>
     </property>
     <property name="plugin-14" type="string" value="separator">
@@ -77,6 +64,12 @@
     </property>
     <property name="plugin-1" type="string" value="clock">
       <property name="digital-format" type="string" value="%p %I:%M "/>
+    </property>
+    <property name="plugin-7" type="string" value="actions"/>
+    <property name="plugin-3" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="14577824233.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
