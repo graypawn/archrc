@@ -13,6 +13,7 @@ fi
 
 # 각종 폴더를 심볼릭 링크한다.
 ln -s $FULL_PATH/.lein ~/
+ln -s $FULL_PATH/.mplayer ~/
 
 mkdir ~/.config/ 2>/dev/null
 ln -s $FULL_PATH/fcitx ~/.config/

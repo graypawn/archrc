@@ -1,0 +1,15 @@
+# Write your default config options here!
+
+unicode = 1
+fontconfig = 1
+# fontconfig=0 font경로를 직접 지정해야 한다.
+# fontconfig=1 fc-list로 볼 수 있는 폰트 이름으로 지정 가능하다.
+font=NanumGothic
+
+#문자셋 지정
+subcp=euckr
+#자막의 외곽선 지정
+subpos=100
+#글꼴의 크기
+subfont-text-scale=5
+subfont-autoscale=1
