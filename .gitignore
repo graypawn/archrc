@@ -22,9 +22,6 @@ fcitx/conf/fcitx-xkb.config
 
 
 # XFCE4
-# xfce4/help.rc
-# xfce4/helpers.rc
-
 xfce4/appfinder/
 xfce4/desktop/
 xfce4/panel/
