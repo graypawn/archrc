@@ -10,6 +10,10 @@ else
         cd "$FULL_PATH"                 > /dev/null 2>&1
         FULL_PATH=`pwd`
 fi
+# bashrc...
+ln -s $FULL_PATH/.bashrc ~/
+ln -s $FULL_PATH/.bash_profile ~/
+ln -s $FULL_PATH/.xinitrc ~/
 
 # 각종 폴더를 심볼릭 링크한다.
 ln -s $FULL_PATH/.lein ~/
