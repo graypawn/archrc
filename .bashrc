@@ -11,11 +11,6 @@ PS1='[\u@\h \W]\$ '
 # Screenfetch
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
 
-Python
-export WORKON_HOME=~/.penv
-source /usr/bin/virtualenvwrapper.sh
-export PIP_REQUIRE_VIRTUALENV=true
-
 # Terminal
 export TERM=xterm-256color
 
@@ -29,7 +24,7 @@ alias copy='xclip -selection clipboard'
 # export GUILE_WARN_DEPRECATED="detailed"
 
 # Emacs
-alias es='sudo emacs -nw'
+palias es='sudo emacs -nw'
 alias et='emacsclient -t'
 alias ec='emacsclient -c -n'
 alias emacsk="emacsclient -e '(kill-emacs)'"
