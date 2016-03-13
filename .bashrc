@@ -24,7 +24,7 @@ alias copy='xclip -selection clipboard'
 # export GUILE_WARN_DEPRECATED="detailed"
 
 # Emacs
-palias es='sudo emacs -nw'
+alias es='sudo emacs -nw'
 alias et='emacsclient -t'
 alias ec='emacsclient -c -n'
 alias emacsk="emacsclient -e '(kill-emacs)'"
