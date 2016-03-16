@@ -15,6 +15,9 @@ ln -s $FULL_PATH/.bashrc ~/
 ln -s $FULL_PATH/.bash_profile ~/
 ln -s $FULL_PATH/.xinitrc ~/
 
+# gitconfig
+ln -s $FULL_PATH/.gitconfig ~/
+
 # 각종 폴더를 심볼릭 링크한다.
 ln -s $FULL_PATH/.lein ~/
 ln -s $FULL_PATH/.mplayer ~/
@@ -22,3 +25,7 @@ ln -s $FULL_PATH/.mplayer ~/
 mkdir ~/.config/ 2>/dev/null
 ln -s $FULL_PATH/fcitx ~/.config/
 ln -s $FULL_PATH/xfce4 ~/.config/
+
+# XFCE4 Menu
+mkdir ~/.local/share/ 2>/dev/null
+ln -s $FULL_PATH/applications ~/.local/share/
