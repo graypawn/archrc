@@ -1,0 +1,7 @@
+[user]
+	email = choi.pawn@gmail.com
+	name = graypawn
+[push]
+	default = simple
+[core]
+	editor = emacsclient
