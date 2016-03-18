@@ -38,6 +38,7 @@
       <property name="Print" type="string" value="scrot -u &apos;%m-%d-%T_$wx$h.png&apos; -e &apos;mv $f ~/Desktop/shots/&apos;"/>
       <property name="&lt;Super&gt;k" type="string" value="keepassx"/>
       <property name="&lt;Super&gt;f" type="string" value="thunar"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="pactl set-sink-mute 1 toggle"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
