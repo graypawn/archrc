@@ -20,17 +20,19 @@ alias aur='ssh aur@aur4.archlinux.org'
 # Xclip
 alias copy='xclip -selection clipboard'
 
-# Guile
-# export GUILE_WARN_DEPRECATED="detailed"
-
 # Emacs
 alias es='sudo emacs -nw'
 alias et='emacsclient -t'
 alias ec='emacsclient -c -n'
-alias emacsk="emacsclient -e '(kill-emacs)'"
+alias emacsk='systemctl --user stop emacs'
 export ALTERNATE_EDITOR=""
 export EDITOR='emacsclient -t'
 export VISUAL="emacsclient -t"
 
-# Power
-alias poweroff='systemctl hibernate'
+# etc alias
+alias cd..='cd ../'
+alias cd...='cd ../../'
+alias cd....='cd ../../../'
+alias free='free -h'
+
+alias ps3='toggle-monitor HDMI2'
