@@ -64,7 +64,7 @@
     </property>
     <property name="plugin-1" type="string" value="clock">
       <property name="digital-format" type="string" value="%p %I:%M "/>
-      <property name="timezone" type="string" value="Asia/Seoul"/>
+      <property name="timezone" type="string" value=""/>
     </property>
     <property name="plugin-7" type="string" value="actions"/>
     <property name="plugin-5" type="string" value="mixer">
