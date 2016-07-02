@@ -12,7 +12,6 @@ fcitx/dbus/
 fcitx/conf/fcitx-autoeng.config
 fcitx/conf/fcitx-chttrans.config
 fcitx/conf/fcitx-classic-ui.config
-fcitx/conf/fcitx-hangul.config
 fcitx/conf/fcitx-imselector.config
 fcitx/conf/fcitx-keyboard.config
 fcitx/conf/fcitx-notify.config
