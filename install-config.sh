@@ -25,6 +25,7 @@ ln -s $FULL_PATH/.mplayer ~/
 mkdir ~/.config/ 2>/dev/null
 ln -s $FULL_PATH/fcitx ~/.config/
 ln -s $FULL_PATH/xfce4 ~/.config/
+ln -s $FULL_PATH/Thunar ~/.config/
 
 # XFCE4 Menu
 mkdir ~/.local/share/ 2>/dev/null
