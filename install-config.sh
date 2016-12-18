@@ -11,7 +11,7 @@ else
         FULL_PATH=`pwd`
 fi
 # bashrc...
-ln -s $FULL_PATH/.bashrc ~/
+ln -s $(readlink .bashrc) ~/
 ln -s $FULL_PATH/.bash_profile ~/
 ln -s $FULL_PATH/.xinitrc ~/
 
