@@ -33,9 +33,11 @@ yaourt -S openssh
 ## Font
 if confirm "Do you want install font group?"
 then
-    yaourt -S ttf-hack
-    yaourt -S ttf-nanum
-    yaourt -S ttf-vlgothic
+    yaourt -S ttf-hack          # English(Coding)
+    yaourt -S ttf-nanum         # Korean
+    yaourt -S ttf-vlgothic      # Japanese
+    yaourt -S ttf-tlwg          # Thai
+    yaourt -S ttf-arphic-uming  # Chinese
 fi
 
 ## Input Method
@@ -95,15 +97,20 @@ yaourt -S mplayer
 yaourt -S evince poppler-data
 yaourt -S audacious
 
+## Archiving and compression tools
+yaourt -S file-roller
+yaourt -S rar
+yaourt -S p7zip
+
 ## Utils
 yaourt -S emacs
 yaourt -S firefox
 yaourt -S dropbox-cli
-yaourt -S file-roller
 yaourt -S transmission-qt
 yaourt -S scrot
 yaourt -S xclip
 yaourt -S yusuke
+yaourt -S catfish
 
 ## toggle-monitor
 yaourt -S xrandr
