@@ -1,7 +1,7 @@
 *~
 
 # Fcitx
-fcitx/profile
+fcitx/profile*
 fcitx/cached_layout
 
 fcitx/clipboard/
@@ -23,6 +23,8 @@ fcitx/conf/fcitx-xkb.config
 
 
 # XFCE4
+xfce4/help.rc
+
 xfce4/appfinder/
 xfce4/desktop/
 xfce4/panel/
@@ -35,6 +37,8 @@ xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
 xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
 
 # leiningen
 .lein/self-installs/
@@ -43,3 +47,7 @@ xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
 # XFCE4 Menu
 applications/mimeinfo.cache
 applications/userapp-*.desktop
+
+# Thunar
+Thunar/renamerrc
+Thunar/accels.scm
