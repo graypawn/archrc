@@ -4,4 +4,5 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-PATH=${PATH}:/home/guilty/.gem/ruby/2.3.0/bin
+# Ruby
+command -v ruby >/dev/null && PATH="$(rubd -e 'print Gem.user_dir')/bin:$PATH"
