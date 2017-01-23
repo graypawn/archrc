@@ -84,3 +84,7 @@ function extract {
         fi
     fi
 }
+
+function nospace {
+    for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+}
