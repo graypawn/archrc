@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+# Created: 2017-03-21
+
+HOST="$1"
+USERNAME="$2"
+HOME_DIR=/home/$USERNAME
+TYPE="$3"
+
+# CONFIGURE HOSTNAME
+echo $HOST > /etc/hostname
+
+# CONFIGURE TIMEZONE
+ln -f -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+hwclock --systohc --utc
+
+# CONFIGURE LOCALE
+cat > /etc/locale.gen <<EOF
+en_US.UTF-8 UTF-8
+ko_KR.UTF-8 UTF-8
+ja_JP.UTF-8 UTF-8
+EOF
+locale-gen
+
+echo LC_CTYPE=ko_KR.UTF-8 > /etc/locale.conf
+
+# CONFIGURE MKINITCPIO
+if [ "$TYPE" = "USB" ]
+then
+    sed -i 's/^HOOKS=\"base udev/HOOKS="base udev block/' /etc/mkinitcpio.conf
+fi
+mkinitcpio -p linux
+
+# CREATE MAIN ACCOUNT
+useradd -m -g users -G storage,power,wheel -s /bin/bash $USERNAME
+cat > /etc/sudoers <<EOF
+root ALL=(ALL) ALL
+"$USERNAME" ALL=(ALL) ALL
+%wheel ALL=(ALL) ALL
+EOF
+
+# PASSWORD
+echo ROOT PASSWORD
+passwd
+echo USER PASSWORD
+passwd $USERNAME
+
+# COPY SSH KEY
+cp -r /root/.ssh $HOME_DIR/.ssh
+chown -R $USERNAME:users $HOME_DIR/.ssh
+
+# CLONE DOTFILES
+git clone git@github.com:graypawn/dotfiles.git $HOME_DIR/.dotfiles
+chown -R $USERNAME:users $HOME_DIR/.dotfiles
+
+# CLONE EMACS CONFIG
+git clone git@github.com:graypawn/emacs.git $HOME_DIR/.emacs.d
+chown -R $USERNAME:users $HOME_DIR/.emacs.d
+
+# EDITOR
+export VISUAL='emacs'
+echo "export VISUAL='emacs'" >> /root/.bashrc
+
+# SUPPORT AUR
+cat >> /etc/pacman.conf <<EOF
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/\$arch
+EOF
+pacman -Sy yaourt
+
+# INSTALL SYSLINUX as BOOTLOADER
+read -r -p "Edit syslinux.cfg ? [Y/n] " response
+response=${response,,}
+if ! [[ $response =~ ^(no|n)$ ]]
+then
+    emacs /boot/syslinux/syslinux.cfg
+fi
+syslinux-install_update -iam
+
+echo CHROOT_SCRIPT COMPLETE
