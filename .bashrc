@@ -21,6 +21,7 @@ alias copy='xclip -selection clipboard'
 
 # Emacs
 alias es='sudo emacs -nw'
+alias ed='emacs --debug-init'
 alias et='emacsclient -t'
 alias ec='emacsclient -c -n'
 alias emacsk='systemctl --user stop emacs'
