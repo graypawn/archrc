@@ -1,33 +1,29 @@
-#!/bin/sh
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+DOTFILES_ROOT=`readlink -f ../`
 
-# 스크립트의 절대 경로를 얻는다.
-EXEC_FILE="$0"
-BASE_NAME=`basename "$EXEC_FILE"`
-if [ "$EXEC_FILE" = "./$BASE_NAME" ] || [ "$EXEC_FILE" = "$BASE_NAME" ]; then
-        FULL_PATH=`pwd`
-else
-        FULL_PATH=`echo "$EXEC_FILE" | sed 's/'"${BASE_NAME}"'$//'`
-        cd "$FULL_PATH"                 > /dev/null 2>&1
-        FULL_PATH=`pwd`
-fi
-# bashrc...
-ln -s $(readlink .bashrc) ~/
-ln -s $FULL_PATH/.bash_profile ~/
-ln -s $FULL_PATH/.xinitrc ~/
-ln -s $FULL_PATH/.sbclrc ~/
+dot_link () {
+    # $1 = Target directory name (just name)
+    # $2 - Link directory path
 
-# gitconfig
-ln -s $FULL_PATH/.gitconfig ~/
+    TARGET_DIR=$DOTFILES_ROOT/$1
+    BACKUP_DIR=$DOTFILES_ROOT/backup/$1
 
-# 각종 폴더를 심볼릭 링크한다.
-ln -s $FULL_PATH/.lein ~/
-ln -s $FULL_PATH/.mplayer ~/
+    # prepare
+    mkdir -p $2
+    mkdir -p $BACKUP_DIR/
 
-mkdir ~/.config/ 2>/dev/null
-ln -s $FULL_PATH/fcitx ~/.config/
-ln -s $FULL_PATH/xfce4 ~/.config/
-ln -s $FULL_PATH/Thunar ~/.config/
+    # for item in $TARGET_DIR/*
+    for item in `ls -A $TARGET_DIR/`; do
+        echo copy "$item"
+        mv $2/$item $BACKUP_DIR/ 2>/dev/null
+        echo link "$item"
+        ln -s $TARGET_DIR/$item $2
+        echo
+    done
+}
 
-# XFCE4 Menu
-mkdir ~/.local/share/ 2>/dev/null
-ln -s $FULL_PATH/applications ~/.local/share/
+dot_link "home" "$HOME"
+dot_link "config" "$HOME/.config"
+dot_link "local_share" "$HOME/.local/share"

@@ -1,53 +1,54 @@
 *~
+/backup/*
 
 # Fcitx
-fcitx/profile*
-fcitx/cached_layout
+config/fcitx/profile*
+config/fcitx/cached_layout
 
-fcitx/clipboard/
-fcitx/log/
-fcitx/data/
-fcitx/dbus/
+config/fcitx/clipboard/
+config/fcitx/log/
+config/fcitx/data/
+config/fcitx/dbus/
 
-fcitx/conf/fcitx-autoeng.config
-fcitx/conf/fcitx-chttrans.config
-fcitx/conf/fcitx-classic-ui.config
-fcitx/conf/fcitx-imselector.config
-fcitx/conf/fcitx-keyboard.config
-fcitx/conf/fcitx-notify.config
-fcitx/conf/fcitx-pinyin-enhance.config
-fcitx/conf/fcitx-spell.config
-fcitx/conf/fcitx-unicode.config
-fcitx/conf/fcitx-xim.config
-fcitx/conf/fcitx-xkb.config
+config/fcitx/conf/fcitx-autoeng.config
+config/fcitx/conf/fcitx-chttrans.config
+config/fcitx/conf/fcitx-classic-ui.config
+config/fcitx/conf/fcitx-imselector.config
+config/fcitx/conf/fcitx-keyboard.config
+config/fcitx/conf/fcitx-notify.config
+config/fcitx/conf/fcitx-pinyin-enhance.config
+config/fcitx/conf/fcitx-spell.config
+config/fcitx/conf/fcitx-unicode.config
+config/fcitx/conf/fcitx-xim.config
+config/fcitx/conf/fcitx-xkb.config
 
 
 # XFCE4
-xfce4/help.rc
+config/xfce4/help.rc
 
-xfce4/appfinder/
-xfce4/desktop/
-xfce4/panel/
+config/xfce4/appfinder/
+config/xfce4/desktop/
+config/xfce4/panel/
 
-xfce4/xfconf/xfce-perchannel-xml/displays.xml
-xfce4/xfconf/xfce-perchannel-xml/thunar.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
-xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
-
-# leiningen
-.lein/self-installs/
-.lein/repl-history
-
-# XFCE4 Menu
-applications/mimeinfo.cache
-applications/userapp-*.desktop
+config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
 
 # Thunar
-Thunar/renamerrc
-Thunar/accels.scm
+config/Thunar/renamerrc
+config/Thunar/accels.scm
+
+# leiningen
+home/.lein/self-installs/
+home/.lein/repl-history
+
+# XFCE4 Menu
+local_share/applications/mimeinfo.cache
+local_share/applications/userapp-*.desktop
