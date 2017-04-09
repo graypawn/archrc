@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+# Created: 2016-05-29
+LOG_DIR=$HOME/.cache/
+LOG_FILE=$LOG_DIR/toggle-monitor.log
+
+usage () {
+    echo "Usage: $0 [OUTPUT]"
+}
+
+if [ -z $1 ]; then
+    usage >&2
+    exit 1
+fi
+
+output=$1
+
+if (xrandr --listmonitors | grep $output 1>/dev/null); then
+    # if OUTPUT is on, then....
+
+    # Write log
+    mkdir -p $LOG_DIR
+    touch $LOG_FILE
+
+    if ! [ -w $LOG_FILE ]; then
+        echo $0: $LOG_FILE: Permission denied 1>&2
+        exit 1
+    fi
+
+    xrandr --listmonitors | sed '1d' \
+        | awk -F'[ +/]' '{print $4 " " $8 " " $9}' > $LOG_FILE
+
+    # Turn off the monitor
+    xrandr --output $output --off
+    echo $output turn off
+elif [ -r $LOG_FILE ]; then
+    primary=(`cat $LOG_FILE | grep \*`)      # primary output
+    target=($(cat $LOG_FILE | grep $output)) # target output
+    X=`expr ${target[1]} - ${primary[1]}`
+    Y=`expr ${target[2]} - ${primary[2]}`
+
+    # Turn on the monitor
+    xrandr --output $output --auto --pos "$X"x"$Y"
+    echo $output turn on
+else                            # to display error message.
+    cat $LOG_FILE
+fi

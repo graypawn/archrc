@@ -27,3 +27,6 @@ dot_link () {
 dot_link "home" "$HOME"
 dot_link "config" "$HOME/.config"
 dot_link "local_share" "$HOME/.local/share"
+
+# /usr/local/bin
+sudo cp $DOTFILES_ROOT/script/* /usr/local/bin

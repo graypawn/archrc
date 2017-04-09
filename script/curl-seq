@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+# Created: 2017-02-09
+BASENAME=$(basename $0)
+
+# Parameter
+if [ $# -ne 2 ]
+then
+    echo "$BASENAME [URL-REGEX] [SEQUENCE-COMMAND]"
+    echo "  [URL-REGEX]         URL containing '\\\$num'"
+    echo "  [SEQUENCE-COMMAND]  Command string to generate sequence"
+    echo ""
+    echo "EXAMPLE"
+    echo "  $BASENAME https://example.com/\\\$num.jpg \"seq 10\""
+    exit 1
+fi
+
+# BODY
+nums=(`$2`)
+total=${#nums[@]}
+index=1
+for num in ${nums[@]}
+do
+    echo -e "\033[33m"$index out of $total"\033[0m"
+    curl -O `echo "$1" | sed 's/\$num/'$num'/g'`
+    ((index++))
+done

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+# Created: 2017-04-09
+
+# This script is Emergency avoidance utility
+# dependence: wmctrl
+
+# BODY
+wmctrl -k on                    # show desktop
+pactl set-sink-mute 1 1         # mute
+xfce4-terminal --drop-down      # dummy
