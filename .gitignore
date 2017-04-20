@@ -49,6 +49,8 @@ config/Thunar/accels.scm
 home/.lein/self-installs/
 home/.lein/repl-history
 
-# XFCE4 Menu
+# LOCAL_SHARE
 local_share/applications/mimeinfo.cache
 local_share/applications/userapp-*.desktop
+local_share/applications/wine/
+local_share/applications/wine-*.desktop
