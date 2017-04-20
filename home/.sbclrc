@@ -8,9 +8,10 @@
 
 ;; quickload list
 (dolist (pkg '(:quickproject
-               :prove              ; Unit testing
-               :cl-arrows              ; clojure's threading macros
-               :cl-fad                 ; pathname library
+               :alexandria              ; Utility
+               :prove                   ; Unit testing
+               :cl-arrows               ; clojure's threading macros
+               :cl-fad                  ; pathname library
                ))
   (ql:quickload pkg :silent t))
 
