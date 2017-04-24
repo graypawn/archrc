@@ -7,6 +7,6 @@
 # dependence: wmctrl
 
 # BODY
-wmctrl -k on                    # show desktop
-pactl set-sink-mute 1 1         # mute
-xfce4-terminal --drop-down      # dummy
+wmctrl -k on                         # show desktop
+pactl set-sink-mute @DEFAULT_SINK@ 1 # mute
+xfce4-terminal --drop-down           # dummy
