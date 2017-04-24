@@ -81,6 +81,7 @@
     <property name="plugin-6" type="string" value="actions"/>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="false"/>
+      <property name="show-notifications" type="bool" value="false"/>
     </property>
   </property>
 </channel>
