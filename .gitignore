@@ -54,3 +54,14 @@ local_share/applications/mimeinfo.cache
 local_share/applications/userapp-*.desktop
 local_share/applications/wine/
 local_share/applications/wine-*.desktop
+
+local_share/icons/hicolor/*
+!local_share/icons/hicolor/48x48/
+local_share/icons/hicolor/48x48/*
+!local_share/icons/hicolor/48x48/apps/
+local_share/icons/hicolor/48x48/apps/*
+
+!local_share/icons/hicolor/48x48/apps/playstation-*.png
+!local_share/icons/hicolor/48x48/apps/text-lisp.png
+!local_share/icons/hicolor/48x48/apps/text-org-mode.png
+!local_share/icons/hicolor/48x48/apps/text-x-emacs-lisp.png
