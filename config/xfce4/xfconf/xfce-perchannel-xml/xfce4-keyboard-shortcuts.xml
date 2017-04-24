@@ -39,6 +39,8 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5%"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5%"/>
+      <property name="&lt;Super&gt;v" type="string" value="pavucontrol"/>
+      <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="string" value="toggle-windowfocus-audio"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -110,7 +112,6 @@
       <property name="&lt;Super&gt;Escape" type="string" value="close_window_key"/>
       <property name="&lt;Super&gt;d" type="string" value="show_desktop_key"/>
       <property name="&lt;Super&gt;Tab" type="string" value="cycle_windows_key"/>
-      <property name="&lt;Super&gt;v" type="string" value="maximize_vert_key"/>
       <property name="&lt;Super&gt;Down" type="string" value="tile_down_key"/>
       <property name="&lt;Super&gt;Up" type="string" value="tile_up_key"/>
       <property name="&lt;Super&gt;h" type="string" value="hide_window_key"/>
