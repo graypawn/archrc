@@ -16,5 +16,5 @@
   (ql:quickload pkg :silent t))
 
 ;;; quickproject
-(setq quickproject:*author* "graypawn <choi.pawn@gmail.com>"
+(setq quickproject:*author* "graypawn <choi.pawn @gmail.com>"
       quickproject:*license* "GPL3")
