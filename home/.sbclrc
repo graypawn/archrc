@@ -6,13 +6,17 @@
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
 
+(defparameter pkgs
+  '(:quickproject            ; skeleton of a Common Lisp project.
+    :cl-fad                  ; - pathname library
+    :alexandria              ; -- Utility
+    :prove                   ; Unit testing
+    :cl-ppcre                ; - Perl-compatible regular expression
+    :let-plus                ; - Destructuring extension of LET*
+    :cl-arrows))             ; clojure's threading macros
+
 ;; quickload list
-(dolist (pkg '(:quickproject
-               :alexandria              ; Utility
-               :prove                   ; Unit testing
-               :cl-arrows               ; clojure's threading macros
-               :cl-fad                  ; pathname library
-               ))
+(dolist (pkg (reverse pkgs))
   (ql:quickload pkg :silent t))
 
 ;;; quickproject
