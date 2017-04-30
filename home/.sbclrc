@@ -13,7 +13,8 @@
     :prove                   ; Unit testing
     :cl-ppcre                ; - Perl-compatible regular expression
     :let-plus                ; - Destructuring extension of LET*
-    :cl-arrows))             ; clojure's threading macros
+    :arrow-macros            ; clojure's threading macros
+    ))
 
 ;; quickload list
 (dolist (pkg (reverse pkgs))
