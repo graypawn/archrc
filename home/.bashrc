@@ -89,3 +89,7 @@ function extract {
 function nospace {
     for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
 }
+
+function push {
+    (sleep $1; notify-send --icon=notification-symbolic "${*:2}") &
+}
