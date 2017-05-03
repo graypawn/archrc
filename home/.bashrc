@@ -53,6 +53,8 @@ alias du='du -ch'
 
 alias ps3='toggle-monitor HDMI2'
 
+alias beep='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
+
 # Useful Functions
 function extract {
     if [ -z "$1" ]; then
@@ -91,5 +93,7 @@ function nospace {
 }
 
 function push {
-    (sleep $1; notify-send --icon=notification-symbolic "${*:2}") &
+    (sleep $1;
+     notify-send --icon=notification-symbolic -t 0 "$1 ago" "${*:2}";
+     beep) &
 }
