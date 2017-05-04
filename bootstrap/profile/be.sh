@@ -12,8 +12,14 @@ packages=(
     ttf-arphic-uming  # Chinese
 
     ## Input Method
-    fcitx-hangul
-    fcitx-mozc
+
+    # Nimf
+    audit
+    nimf-git
+
+    # # Fcitx
+    # fcitx-hangul
+    # fcitx-mozc
 
     ## Themes
     gtk-theme-arc-git
@@ -80,6 +86,9 @@ done
 yaourt -S virtualbox linux-headers virtualbox-ext-oracle
 echo "vboxdrv" | sudo tee -a /etc/modules-load.d/virtualbox.conf
 
+## Dconf
+DCONF_DIR=../dconf/
+dconf load /org/nimf/ < $DCONF_DIR/nimf.dconf
 
 ## toggle-monitor
 yaourt -S xrandr

@@ -49,6 +49,7 @@
         <value type="string" value="birdie"/>
         <value type="string" value="drop-down terminal"/>
         <value type="string" value="scim-panel-gtk"/>
+        <value type="string" value="nimf-daemon"/>
         <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="polly"/>
         <value type="string" value="nabi"/>
