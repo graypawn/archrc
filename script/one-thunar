@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+# Author: graypawn (choi.pawn @gmail.com)
+# Created: 2017-05-11
+
+main_thunar_id=( $(xdotool search --name "File Manager") )
+
+if [ -n "$main_thunar_id" ]; then
+    xdotool windowraise $main_thunar_id
+else
+    thunar
+fi
