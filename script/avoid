@@ -5,8 +5,14 @@
 
 # This script is Emergency avoidance utility
 # dependence: wmctrl
+current_mode="$(wmctrl -m | grep 'showing the desktop')"
 
-# BODY
-wmctrl -k on                         # show desktop
-pactl set-sink-mute @DEFAULT_SINK@ 1 # mute
-xfce4-terminal --drop-down           # dummy
+# Toggle desktop
+if [[ "${current_mode##* }" == ON ]]; then
+    wmctrl -k off
+else
+    wmctrl -k on
+fi
+
+pactl set-sink-mute @DEFAULT_SINK@ toggle # Mute
+xfce4-terminal --drop-down                # Dummy

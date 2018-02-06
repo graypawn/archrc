@@ -1,6 +1,6 @@
-# #
-# # ~/.bashrc
-# #
+#
+# ~/.bashrc
+#
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -55,6 +55,9 @@ alias ps3='toggle-monitor HDMI2'
 
 alias beep='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
 
+alias pl='cat /var/log/pacman.log | grep -i upgraded'
+alias plg='cat /var/log/pacman.log | grep upgraded | grep -i'
+
 # Useful Functions
 function extract {
     if [ -z "$1" ]; then
@@ -96,4 +99,14 @@ function push {
     (sleep $1;
      notify-send --icon=notification-symbolic -t 0 "$1 ago" "${*:2}";
      beep) &
+}
+
+# VM
+function vm {
+    case "$1" in
+        on) VBoxManage startvm --type headless $2;;
+        off) VBoxManage controlvm $2 poweroff;;
+        save) VBoxManage controlvm $2 savestate;;
+        state) VBoxManage list runningvms;;
+    esac
 }

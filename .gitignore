@@ -2,67 +2,56 @@
 /backup/*
 
 # Fcitx
-config/fcitx/profile*
-config/fcitx/cached_layout
+link/config/fcitx/profile*
+link/config/fcitx/cached_layout
 
-config/fcitx/clipboard/
-config/fcitx/log/
-config/fcitx/data/
-config/fcitx/dbus/
+link/config/fcitx/clipboard/
+link/config/fcitx/log/
+link/config/fcitx/data/
+link/config/fcitx/dbus/
 
-config/fcitx/conf/fcitx-autoeng.config
-config/fcitx/conf/fcitx-chttrans.config
-config/fcitx/conf/fcitx-classic-ui.config
-config/fcitx/conf/fcitx-imselector.config
-config/fcitx/conf/fcitx-keyboard.config
-config/fcitx/conf/fcitx-notify.config
-config/fcitx/conf/fcitx-pinyin-enhance.config
-config/fcitx/conf/fcitx-spell.config
-config/fcitx/conf/fcitx-unicode.config
-config/fcitx/conf/fcitx-xim.config
-config/fcitx/conf/fcitx-xkb.config
+link/config/fcitx/conf/fcitx-autoeng.config
+link/config/fcitx/conf/fcitx-chttrans.config
+link/config/fcitx/conf/fcitx-classic-ui.config
+link/config/fcitx/conf/fcitx-imselector.config
+link/config/fcitx/conf/fcitx-keyboard.config
+link/config/fcitx/conf/fcitx-notify.config
+link/config/fcitx/conf/fcitx-pinyin-enhance.config
+link/config/fcitx/conf/fcitx-spell.config
+link/config/fcitx/conf/fcitx-unicode.config
+link/config/fcitx/conf/fcitx-xim.config
+link/config/fcitx/conf/fcitx-xkb.config
 
 
 # XFCE4
-config/xfce4/help.rc
+link/config/xfce4/help.rc
+link/config/xfce4/helpers.rc
 
-config/xfce4/appfinder/
-config/xfce4/desktop/
-config/xfce4/panel/
+link/config/xfce4/appfinder/
+link/config/xfce4/desktop/
+link/config/xfce4/panel/
 
-config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
-config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+link/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
 
 # Thunar
-config/Thunar/renamerrc
-config/Thunar/accels.scm
+link/config/Thunar/renamerrc
+link/config/Thunar/accels.scm
 
 # leiningen
-home/.lein/self-installs/
-home/.lein/repl-history
+link/home/.lein/self-installs/
+link/home/.lein/repl-history
 
 # LOCAL_SHARE
-local_share/applications/mimeinfo.cache
-local_share/applications/userapp-*.desktop
-local_share/applications/wine/
-local_share/applications/wine-*.desktop
-
-local_share/icons/hicolor/*
-!local_share/icons/hicolor/48x48/
-local_share/icons/hicolor/48x48/*
-!local_share/icons/hicolor/48x48/apps/
-local_share/icons/hicolor/48x48/apps/*
-
-!local_share/icons/hicolor/48x48/apps/playstation-*.png
-!local_share/icons/hicolor/48x48/apps/text-lisp.png
-!local_share/icons/hicolor/48x48/apps/text-org-mode.png
-!local_share/icons/hicolor/48x48/apps/text-x-emacs-lisp.png
-!local_share/icons/hicolor/48x48/apps/folder-link.png
+link/local_share/applications/mimeinfo.cache
+link/local_share/applications/userapp-*.desktop
+link/local_share/applications/wine/
+link/local_share/applications/wine-*.desktop

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Google Keep
+Comment=Open Google Keep
+Icon=google-keep-icon
+Exec=xdg-open https://keep.google.com
+NoDisplay=false
+Categories=X-GNOME-Other;
+StartupNotify=false
+Terminal=false
